@@ -25,9 +25,5 @@ namespace WpfFirstProject
             InitializeComponent();
             DataContext = new DataSource();
         }
-
-        
-
-
     }
 }
