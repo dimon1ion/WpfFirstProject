@@ -12,8 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfFirstProject.Service;
+using WpfFirstProject.ViewModel;
 
-namespace WpfFirstProject
+namespace WpfFirstProject.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,7 +25,7 @@ namespace WpfFirstProject
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new DataSource();
+            DataContext = new MovieViewModel(new JsonFileService());
         }
     }
 }
