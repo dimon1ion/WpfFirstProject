@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfFirstProject"
+        xmlns:controls="clr-namespace:WpfFirstProject.MyControls"
+        xmlns:local="clr-namespace:WpfFirstProject.View"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.InputBindings>
@@ -24,6 +25,7 @@
                         <Label Content="{Binding Path=Genre}"/>
                         <Label Content="{Binding Path=Year}"/>
                         <Label Content="{Binding Path=Imdb}"/>
+                        <controls:Rate Ratevalue="3"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
